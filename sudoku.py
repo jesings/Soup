@@ -7,7 +7,7 @@ def sudokuprint(board):
 def possible(board,index):
     dumbhash = [True,True,True,True,True,True,True,True,True,True]
     for member in cliquemap2[index]:
-        if board[member]: dumbhash[board[member]]=False
+        dumbhash[board[member]]=False
     if dumbhash[1]: yield 1
     if dumbhash[2]: yield 2
     if dumbhash[3]: yield 3
@@ -567,6 +567,7 @@ def solveboard(board,index):
         #global backtracks
         #backtracks = 0
         obviousget(board)
+        elimcliques(board,0)
         elimcliques(board,1)
         elimcliques(board,2)
         elimcliques(board,3)
@@ -660,6 +661,7 @@ def solveboard(board,index):
     index,poss = obviousishget(board)
     if index==81:
         outputfile.write(sudokuprint(board))
+        #print(backtracks)
         sys.exit(0)
     #genlen = 0
     poss = list(poss)
@@ -673,4 +675,3 @@ def solveboard(board,index):
 with open(sys.argv[1],'r') as inputfile, open(sys.argv[2],'w') as outputfile:
     while inputfile.readline().strip()!=sys.argv[3]: pass
     solveboard([int(x) for x in ','.join((inputfile.readline().strip() for i in range(9))).replace("_",'0').split(',')],-1)
-    #print(backtracks)
