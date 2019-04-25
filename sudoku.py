@@ -22,12 +22,10 @@ def elimcliques(board,index):
     for clique in cliquemap[index]:
         dumbhash = [[],[],[],[],[],[],[],[],[],[]]
         for val in clique:
-            if board[val]:
-                dumbhash[board[val]] = None
-            else:
+            if not board[val]:
                 for pos in possible(board,val):
-                    if dumbhash[pos] is not None:
-                        dumbhash[pos].append(val)
+                    dumbhash[pos].append(val)
+        #set stuff
         if dumbhash[1] and len(dumbhash[1])==1:
             board[dumbhash[1][0]] = 1
             chindices.append(dumbhash[1][0])
@@ -569,27 +567,29 @@ def solveboard(board,index):
         elimcliques(board,79)
         elimcliques(board,80)
         index = 0
-        while(board[index]):
-            index+=1
-            if index==81:
-                return sudokuprint(board)
-    #genlen = 0
+        try:
+            while(board[index]):
+                index+=1
+        except:
+            outputfile.write(sudokuprint(board))
+            sys.exit(0)
     board = board[:]
     elimcliques(board,index)
     while obviousget(board): pass
     index,poss = obviousishget(board)
     if index==81:
-        return sudokuprint(board)
+        outputfile.write(sudokuprint(board))
+        sys.exit(0)
+    #genlen = 0
+    poss = list(poss)
     for n in poss:
         board[index] = n
-        solutionp = solveboard(board,index)
-        if solutionp:
-            return solutionp
+        solveboard(board,index)
         #genlen+=1
     #if genlen!=1:
         #backtracks+=1
     return False
 with open(sys.argv[1],'r') as inputfile, open(sys.argv[2],'w') as outputfile:
     while inputfile.readline().strip()!=sys.argv[3]: pass
-    outputfile.write(solveboard([int(x) for x in ','.join((inputfile.readline().strip() for i in range(9))).replace("_",'0').split(',')],-1))
+    solveboard([int(x) for x in ','.join((inputfile.readline().strip() for i in range(9))).replace("_",'0').split(',')],-1)
     #print(backtracks)
