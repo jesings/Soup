@@ -22,10 +22,9 @@ def elimcliques(board,index):
     for clique in cliquemap[index]:
         dumbhash = [[],[],[],[],[],[],[],[],[],[]]
         for val in clique:
-            if not board[val]:
-                for pos in possible(board,val):
-                    dumbhash[pos].append(val)
-        #set stuff
+            if board[val]: continue
+            for pos in possible(board,val):
+                dumbhash[pos].append(val)
         if dumbhash[1] and len(dumbhash[1])==1:
             board[dumbhash[1][0]] = 1
             chindices.append(dumbhash[1][0])
