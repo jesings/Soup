@@ -66,407 +66,488 @@ def obviousget(board):
             if len(posarr)==1:
                 board[0] = posarr[0]
                 gappend(0)
+                changed = True
         if not board[1]:
             posarr = list(possible(board,1))
             if len(posarr)==1:
                 board[1] = posarr[0]
                 gappend(1)
+                changed = True
         if not board[2]:
             posarr = list(possible(board,2))
             if len(posarr)==1:
                 board[2] = posarr[0]
                 gappend(2)
+                changed = True
         if not board[3]:
             posarr = list(possible(board,3))
             if len(posarr)==1:
                 board[3] = posarr[0]
                 gappend(3)
+                changed = True
         if not board[4]:
             posarr = list(possible(board,4))
             if len(posarr)==1:
                 board[4] = posarr[0]
                 gappend(4)
+                changed = True
         if not board[5]:
             posarr = list(possible(board,5))
             if len(posarr)==1:
                 board[5] = posarr[0]
                 gappend(5)
+                changed = True
         if not board[6]:
             posarr = list(possible(board,6))
             if len(posarr)==1:
                 board[6] = posarr[0]
                 gappend(6)
+                changed = True
         if not board[7]:
             posarr = list(possible(board,7))
             if len(posarr)==1:
                 board[7] = posarr[0]
                 gappend(7)
+                changed = True
         if not board[8]:
             posarr = list(possible(board,8))
             if len(posarr)==1:
                 board[8] = posarr[0]
                 gappend(8)
+                changed = True
         if not board[9]:
             posarr = list(possible(board,9))
             if len(posarr)==1:
                 board[9] = posarr[0]
                 gappend(9)
+                changed = True
         if not board[10]:
             posarr = list(possible(board,10))
             if len(posarr)==1:
                 board[10] = posarr[0]
                 gappend(10)
+                changed = True
         if not board[11]:
             posarr = list(possible(board,11))
             if len(posarr)==1:
                 board[11] = posarr[0]
                 gappend(11)
+                changed = True
         if not board[12]:
             posarr = list(possible(board,12))
             if len(posarr)==1:
                 board[12] = posarr[0]
                 gappend(12)
+                changed = True
         if not board[13]:
             posarr = list(possible(board,13))
             if len(posarr)==1:
                 board[13] = posarr[0]
                 gappend(13)
+                changed = True
         if not board[14]:
             posarr = list(possible(board,14))
             if len(posarr)==1:
                 board[14] = posarr[0]
                 gappend(14)
+                changed = True
         if not board[15]:
             posarr = list(possible(board,15))
             if len(posarr)==1:
                 board[15] = posarr[0]
                 gappend(15)
+                changed = True
         if not board[16]:
             posarr = list(possible(board,16))
             if len(posarr)==1:
                 board[16] = posarr[0]
                 gappend(16)
+                changed = True
         if not board[17]:
             posarr = list(possible(board,17))
             if len(posarr)==1:
                 board[17] = posarr[0]
                 gappend(17)
+                changed = True
         if not board[18]:
             posarr = list(possible(board,18))
             if len(posarr)==1:
                 board[18] = posarr[0]
                 gappend(18)
+                changed = True
         if not board[19]:
             posarr = list(possible(board,19))
             if len(posarr)==1:
                 board[19] = posarr[0]
                 gappend(19)
+                changed = True
         if not board[20]:
             posarr = list(possible(board,20))
             if len(posarr)==1:
                 board[20] = posarr[0]
                 gappend(20)
+                changed = True
         if not board[21]:
             posarr = list(possible(board,21))
             if len(posarr)==1:
                 board[21] = posarr[0]
                 gappend(21)
+                changed = True
         if not board[22]:
             posarr = list(possible(board,22))
             if len(posarr)==1:
                 board[22] = posarr[0]
                 gappend(22)
+                changed = True
         if not board[23]:
             posarr = list(possible(board,23))
             if len(posarr)==1:
                 board[23] = posarr[0]
                 gappend(23)
+                changed = True
         if not board[24]:
             posarr = list(possible(board,24))
             if len(posarr)==1:
                 board[24] = posarr[0]
                 gappend(24)
+                changed = True
         if not board[25]:
             posarr = list(possible(board,25))
             if len(posarr)==1:
                 board[25] = posarr[0]
                 gappend(25)
+                changed = True
         if not board[26]:
             posarr = list(possible(board,26))
             if len(posarr)==1:
                 board[26] = posarr[0]
                 gappend(26)
+                changed = True
         if not board[27]:
             posarr = list(possible(board,27))
             if len(posarr)==1:
                 board[27] = posarr[0]
                 gappend(27)
+                changed = True
         if not board[28]:
             posarr = list(possible(board,28))
             if len(posarr)==1:
                 board[28] = posarr[0]
                 gappend(28)
+                changed = True
         if not board[29]:
             posarr = list(possible(board,29))
             if len(posarr)==1:
                 board[29] = posarr[0]
                 gappend(29)
+                changed = True
         if not board[30]:
             posarr = list(possible(board,30))
             if len(posarr)==1:
                 board[30] = posarr[0]
                 gappend(30)
+                changed = True
         if not board[31]:
             posarr = list(possible(board,31))
             if len(posarr)==1:
                 board[31] = posarr[0]
                 gappend(31)
+                changed = True
         if not board[32]:
             posarr = list(possible(board,32))
             if len(posarr)==1:
                 board[32] = posarr[0]
                 gappend(32)
+                changed = True
         if not board[33]:
             posarr = list(possible(board,33))
             if len(posarr)==1:
                 board[33] = posarr[0]
                 gappend(33)
+                changed = True
         if not board[34]:
             posarr = list(possible(board,34))
             if len(posarr)==1:
                 board[34] = posarr[0]
                 gappend(34)
+                changed = True
         if not board[35]:
             posarr = list(possible(board,35))
             if len(posarr)==1:
                 board[35] = posarr[0]
                 gappend(35)
+                changed = True
         if not board[36]:
             posarr = list(possible(board,36))
             if len(posarr)==1:
                 board[36] = posarr[0]
                 gappend(36)
+                changed = True
         if not board[37]:
             posarr = list(possible(board,37))
             if len(posarr)==1:
                 board[37] = posarr[0]
                 gappend(37)
+                changed = True
         if not board[38]:
             posarr = list(possible(board,38))
             if len(posarr)==1:
                 board[38] = posarr[0]
                 gappend(38)
+                changed = True
         if not board[39]:
             posarr = list(possible(board,39))
             if len(posarr)==1:
                 board[39] = posarr[0]
                 gappend(39)
+                changed = True
         if not board[40]:
             posarr = list(possible(board,40))
             if len(posarr)==1:
                 board[40] = posarr[0]
                 gappend(40)
+                changed = True
         if not board[41]:
             posarr = list(possible(board,41))
             if len(posarr)==1:
                 board[41] = posarr[0]
                 gappend(41)
+                changed = True
         if not board[42]:
             posarr = list(possible(board,42))
             if len(posarr)==1:
                 board[42] = posarr[0]
                 gappend(42)
+                changed = True
         if not board[43]:
             posarr = list(possible(board,43))
             if len(posarr)==1:
                 board[43] = posarr[0]
                 gappend(43)
+                changed = True
         if not board[44]:
             posarr = list(possible(board,44))
             if len(posarr)==1:
                 board[44] = posarr[0]
                 gappend(44)
+                changed = True
         if not board[45]:
             posarr = list(possible(board,45))
             if len(posarr)==1:
                 board[45] = posarr[0]
                 gappend(45)
+                changed = True
         if not board[46]:
             posarr = list(possible(board,46))
             if len(posarr)==1:
                 board[46] = posarr[0]
                 gappend(46)
+                changed = True
         if not board[47]:
             posarr = list(possible(board,47))
             if len(posarr)==1:
                 board[47] = posarr[0]
                 gappend(47)
+                changed = True
         if not board[48]:
             posarr = list(possible(board,48))
             if len(posarr)==1:
                 board[48] = posarr[0]
                 gappend(48)
+                changed = True
         if not board[49]:
             posarr = list(possible(board,49))
             if len(posarr)==1:
                 board[49] = posarr[0]
                 gappend(49)
+                changed = True
         if not board[50]:
             posarr = list(possible(board,50))
             if len(posarr)==1:
                 board[50] = posarr[0]
                 gappend(50)
+                changed = True
         if not board[51]:
             posarr = list(possible(board,51))
             if len(posarr)==1:
                 board[51] = posarr[0]
                 gappend(51)
+                changed = True
         if not board[52]:
             posarr = list(possible(board,52))
             if len(posarr)==1:
                 board[52] = posarr[0]
                 gappend(52)
+                changed = True
         if not board[53]:
             posarr = list(possible(board,53))
             if len(posarr)==1:
                 board[53] = posarr[0]
                 gappend(53)
+                changed = True
         if not board[54]:
             posarr = list(possible(board,54))
             if len(posarr)==1:
                 board[54] = posarr[0]
                 gappend(54)
+                changed = True
         if not board[55]:
             posarr = list(possible(board,55))
             if len(posarr)==1:
                 board[55] = posarr[0]
                 gappend(55)
+                changed = True
         if not board[56]:
             posarr = list(possible(board,56))
             if len(posarr)==1:
                 board[56] = posarr[0]
                 gappend(56)
+                changed = True
         if not board[57]:
             posarr = list(possible(board,57))
             if len(posarr)==1:
                 board[57] = posarr[0]
                 gappend(57)
+                changed = True
         if not board[58]:
             posarr = list(possible(board,58))
             if len(posarr)==1:
                 board[58] = posarr[0]
                 gappend(58)
+                changed = True
         if not board[59]:
             posarr = list(possible(board,59))
             if len(posarr)==1:
                 board[59] = posarr[0]
                 gappend(59)
+                changed = True
         if not board[60]:
             posarr = list(possible(board,60))
             if len(posarr)==1:
                 board[60] = posarr[0]
                 gappend(60)
+                changed = True
         if not board[61]:
             posarr = list(possible(board,61))
             if len(posarr)==1:
                 board[61] = posarr[0]
                 gappend(61)
+                changed = True
         if not board[62]:
             posarr = list(possible(board,62))
             if len(posarr)==1:
                 board[62] = posarr[0]
                 gappend(62)
+                changed = True
         if not board[63]:
             posarr = list(possible(board,63))
             if len(posarr)==1:
                 board[63] = posarr[0]
                 gappend(63)
+                changed = True
         if not board[64]:
             posarr = list(possible(board,64))
             if len(posarr)==1:
                 board[64] = posarr[0]
                 gappend(64)
+                changed = True
         if not board[65]:
             posarr = list(possible(board,65))
             if len(posarr)==1:
                 board[65] = posarr[0]
                 gappend(65)
+                changed = True
         if not board[66]:
             posarr = list(possible(board,66))
             if len(posarr)==1:
                 board[66] = posarr[0]
                 gappend(66)
+                changed = True
         if not board[67]:
             posarr = list(possible(board,67))
             if len(posarr)==1:
                 board[67] = posarr[0]
                 gappend(67)
+                changed = True
         if not board[68]:
             posarr = list(possible(board,68))
             if len(posarr)==1:
                 board[68] = posarr[0]
                 gappend(68)
+                changed = True
         if not board[69]:
             posarr = list(possible(board,69))
             if len(posarr)==1:
                 board[69] = posarr[0]
                 gappend(69)
+                changed = True
         if not board[70]:
             posarr = list(possible(board,70))
             if len(posarr)==1:
                 board[70] = posarr[0]
                 gappend(70)
+                changed = True
         if not board[71]:
             posarr = list(possible(board,71))
             if len(posarr)==1:
                 board[71] = posarr[0]
                 gappend(71)
+                changed = True
         if not board[72]:
             posarr = list(possible(board,72))
             if len(posarr)==1:
                 board[72] = posarr[0]
                 gappend(72)
+                changed = True
         if not board[73]:
             posarr = list(possible(board,73))
             if len(posarr)==1:
                 board[73] = posarr[0]
                 gappend(73)
+                changed = True
         if not board[74]:
             posarr = list(possible(board,74))
             if len(posarr)==1:
                 board[74] = posarr[0]
                 gappend(74)
+                changed = True
         if not board[75]:
             posarr = list(possible(board,75))
             if len(posarr)==1:
                 board[75] = posarr[0]
                 gappend(75)
+                changed = True
         if not board[76]:
             posarr = list(possible(board,76))
             if len(posarr)==1:
                 board[76] = posarr[0]
                 gappend(76)
+                changed = True
         if not board[77]:
             posarr = list(possible(board,77))
             if len(posarr)==1:
                 board[77] = posarr[0]
                 gappend(77)
+                changed = True
         if not board[78]:
             posarr = list(possible(board,78))
             if len(posarr)==1:
                 board[78] = posarr[0]
                 gappend(78)
+                changed = True
         if not board[79]:
             posarr = list(possible(board,79))
             if len(posarr)==1:
                 board[79] = posarr[0]
                 gappend(79)
+                changed = True
         if not board[80]:
             posarr = list(possible(board,80))
             if len(posarr)==1:
                 board[80] = posarr[0]
                 gappend(80)
-    return len(guyschanged) + sum([elimcliques(board,i) for i in guyschanged])
+                changed = True
+    return len(guyschanged) + sum((elimcliques(board,i) for i in guyschanged))
 def obviousishget(board):
     start = 0
     try:
