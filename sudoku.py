@@ -565,12 +565,13 @@ def obviousishget(board):
 def validate(board):
     for clique in click:
         dumbhash = [True,True,True,True,True,True,True,True,True,True]
-        for member in cliquemap2[index]:
+        for member in clique:
             if dumbhash[board[member]]:
                 dumbhash[board[member]]=False
             else:
-                return True
-    return False
+                if board[member]:
+                    return False
+    return True
 
 def solveboard(board,index):
     #global backtracks
