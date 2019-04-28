@@ -108,7 +108,7 @@ name,WebSudoku-Evil,solved
 3,2,1,6,4,5,8,7,9
 7,6,8,2,9,1,4,3,5
 
-https://www.telegraph.co.uk/news/science/science-news/9359579/Worlds-hardest-sudoku-can-you-crack-it.htmlname,hardest-sudoku-telegraph,unsolved
+name,hardest-sudoku-telegraph,unsolved
 8,_,_,_,_,_,_,_,_
 _,_,3,6,_,_,_,_,_
 _,7,_,_,9,_,2,_,_

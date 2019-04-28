@@ -1,0 +1,73 @@
+<html>
+    <body>
+        <p>
+        Naive: Procedurally go through all of the cells, and procedurally go through every value for each cell, backtracking if there is no possible value in that cell<br/>
+        1st Optimization: Same as naive, however on every round check(only once) for cells that only have one possible value, and fill those in--I think the reason that this one takes longer than the previous one is because the Naive algorithm never copies the board, it just reverts the changes<br/>
+        2nd Optimization: Same as first optimization, however added checking until there are no further additions to make, added another heuristic that checks if within a clique there is only one cell that could possibly have a certain value, and fills it in. It repeats these 2 heuristics until nothing else can be filled in. Finally, the algorithm no longer fills cells in in order, instead opting to fill in cells with fewer than 3 possibilities first. The fact that the first few are slower is due to the heavy overhead of checking the board over and over again. The majority of the speedum is algorithmic, however code optimizations also certainly played a significant part in cutting down the amount of time each puzzle takes-these optimizations include unrolling loops, lazy evaluation, and simplifying arithmetic. <br/>
+        </p>
+        <p style="text-align:center"><b>Data for each Sudoku Board (time, backtracks (, smartness ratio))<b></p>
+        <table style="width:100%">
+            <tr>
+                <th>Puzzle</th>
+                <th>Data (Naive)</th>
+                <th>Data (1st Optimization)</th>
+                <th>Data (2nd Optimization)</th>
+            </tr>
+            <tr>
+                <td>A1</td>
+                <td>0.020, 126</td>
+                <td>0.018, 0, infinity</td>
+                <td>0.024, 0, infinity</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td>0.099, 15504</td>
+                <td>0.140, 242, 64</td>
+                <td>0.024, 0, infinity</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td>0.013, 6395</td>
+                <td>0.014, 0, infinity</td>
+                <td>0.024, 0, infinity</td>
+            </tr>
+            <tr>
+                <td>A4</td>
+                <td>0.139, 21557</td>
+                <td>0.180, 317, 68</td>
+                <td>0.024, 1, 21557</td>
+            </tr>
+            <tr>
+                <td>A5</td>
+                <td>0.035, 4001</td>
+                <td>0.015, 0, infinity</td>
+                <td>0.024, 0, infinity</td>
+            </tr>
+            <tr>
+                <td>A6</td>
+                <td>0.157, 28337</td>
+                <td>0.330, 727, 38</td>
+                <td>0.049, 545, 52</td>
+            </tr>
+            <tr>
+                <td>A7</td>
+                <td>7.042, 1264194</td>
+                <td>22.187, 54515, 23</td>
+                <td>0.088, 172, 7349</td>
+            </tr>
+            <tr>
+                <td>A8</td>
+                <td>53.234, 10445922</td>
+                <td>83.913, 278822, 37</td>
+                <td>0.198, 664, 15731</td>
+            </tr>
+        </table>
+    </body>
+    <style type="text/css" media="screen">
+        td 
+        {
+            text-align: center; 
+            vertical-align: middle;
+        }
+    </style>
+</html>
