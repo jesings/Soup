@@ -562,24 +562,12 @@ def obviousishget(board):
             posarr = len(posarrl)
             if posarr<4: return i,posarrl
     return start,possible(board,start)
-def validate(board):
-    for clique in click:
-        dumbhash = [True,True,True,True,True,True,True,True,True,True]
-        for member in clique:
-            if dumbhash[board[member]]:
-                dumbhash[board[member]]=False
-            else:
-                if board[member]:
-                    return False
-    return True
 
 def solveboard(board,index):
     #global backtracks
     board = board[:]
     elimcliques(board,index)
     while obviousget(board): pass
-    if not validate(board):
-        return False
     elimcliques(board,0)
     elimcliques(board,12)
     elimcliques(board,24)
@@ -589,8 +577,6 @@ def solveboard(board,index):
     elimcliques(board,56)
     elimcliques(board,68)
     elimcliques(board,80)
-    if not validate(board):
-        return False
     index,poss = obviousishget(board)
     if index==81:
         outputfile.write(sudokuprint(board))
