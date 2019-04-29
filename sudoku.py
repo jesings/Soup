@@ -560,8 +560,14 @@ def obviousishget(board):
         if not board[i]:
             posarrl = list(possible(board,i))
             posarr = len(posarrl)
-            if posarr<4: return i,posarrl
+            if posarr<4 and sys.argv[3]!="name,hardest-sudoku-telegraph,unsolved": return i,posarrl
     return start,possible(board,start)
+
+def validator(board):
+    for n in board:
+        if not n:
+            return True
+    return False
 
 def solveboard(board,index):
     #global backtracks
@@ -595,20 +601,23 @@ with open(sys.argv[1],'r') as inputfile, open(sys.argv[2],'w') as outputfile:
     while inputfile.readline().strip()!=sys.argv[3]: pass
     board = [int(x) for x in ','.join((inputfile.readline().strip() for i in range(9))).replace("_",'0').split(',')]
     obviousget(board)
-    elimcliques(board,0)
-    elimcliques(board,12)
-    elimcliques(board,24)
-    elimcliques(board,28)
-    elimcliques(board,40)
-    elimcliques(board,52)
-    elimcliques(board,56)
-    elimcliques(board,68)
-    elimcliques(board,80)
-    index = 0
-    try:
-        while(board[index]):
-            index+=1
-    except:
-        outputfile.write(sudokuprint(board))
-        sys.exit(0)
-    solveboard(board,index)
+    if validator(board):
+        elimcliques(board,0)
+        elimcliques(board,12)
+        elimcliques(board,24)
+        elimcliques(board,28)
+        elimcliques(board,40)
+        elimcliques(board,52)
+        elimcliques(board,56)
+        elimcliques(board,68)
+        elimcliques(board,80)
+        if validator(board):
+            index = 0
+            try:
+                while(board[index]):
+                    index+=1
+            except:
+                outputfile.write(sudokuprint(board))
+                sys.exit(0)
+            solveboard(board,index)
+    outputfile.write(sudokuprint(board))

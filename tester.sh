@@ -6,7 +6,7 @@ echo $line;
 time(python $dotpyfile $inputfile $outputfile $line);
 done<<<"name,Easy-NYTimes,unsolved
 name,Medium-NYTimes,unsolved
-name,Medium-NYTimes,solved
+name,Hard-NYTimes,unsolved
 name,WebSudoku-Hard,unsolved
 name,WebSudoku-Evil,unsolved
 name,hardest-sudoku-telegraph,unsolved
