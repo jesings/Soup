@@ -602,15 +602,9 @@ with open(sys.argv[1],'r') as inputfile, open(sys.argv[2],'w') as outputfile:
     board = [int(x) for x in ','.join((inputfile.readline().strip() for i in range(9))).replace("_",'0').split(',')]
     obviousget(board)
     if validator(board):
-        elimcliques(board,0)
-        elimcliques(board,12)
-        elimcliques(board,24)
-        elimcliques(board,28)
-        elimcliques(board,40)
-        elimcliques(board,52)
-        elimcliques(board,56)
-        elimcliques(board,68)
-        elimcliques(board,80)
+        snursh = 1
+        while snursh:
+            snursh = elimcliques(board,0)+elimcliques(board,12)+ elimcliques(board,24)+ elimcliques(board,28)+ elimcliques(board,40)+ elimcliques(board,52)+ elimcliques(board,56)+ elimcliques(board,68)+ elimcliques(board,80)+obviousget(board)
         if validator(board):
             index = 0
             try:
